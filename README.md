@@ -1,5 +1,4 @@
 # Stock-Analysis-and-Prediction-Applying-Machine-Learning
-# Stock Market Prediction Using LSTM, GRU, and XGBoost
 
 ## Project Overview
 
