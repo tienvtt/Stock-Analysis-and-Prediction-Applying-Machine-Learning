@@ -1,42 +1,42 @@
-# Stock-Analysis-and-Prediction-Applying-Machine-Learning
-
 ## Project Overview
+This project aims to **analyze and predict stock prices** using a combination of **quantitative analysis** and **machine learning models**, including **LSTM, GRU, and XGBoost**. 
 
-This project focuses on **predicting stock prices** using advanced machine learning techniques, including **Long Short-Term Memory (LSTM)**, **Gated Recurrent Units (GRU)**, and **XGBoost**. By leveraging historical stock data and technical indicators, the models aim to provide insights for investment decision-making.
+## Project Objectives
+- Perform **quantitative analysis** of stock market trends.
+- Compute and analyze **technical indicators** such as **SMA, EMA, RSI, MACD**.
+- Develop **predictive models** to forecast stock prices accurately.
+- Compare the effectiveness of **LSTM, GRU, and XGBoost** for stock prediction.
+- Provide **investment insights** based on model predictions.
 
-## Features
-- **Data Collection & Preprocessing:**
-  - Loaded and cleaned historical stock price data (Open, High, Low, Close).
-  - Computed technical indicators such as **MACD, RSI, SMA, EMA**.
-  - Normalized data for deep learning models (LSTM, GRU, XGBoost).
+## Technologies
+- **Programming Language:** Python
+- **Machine Learning:** LSTM, GRU, XGBoost
 
-- **Model Implementation:**
-  - Implemented **LSTM and GRU** for sequence-based forecasting.
-  - Used **XGBoost** for tabular-based time series prediction.
-  - Optimized hyperparameters using **Grid Search and Bayesian Optimization**.
+## Quantitative Analysis
+The project includes a detailed analysis of stock market trends through:
+- **Simple Moving Average (SMA):** Identifies trend direction.
+- **Exponential Moving Average (EMA):** Weighs recent prices more heavily.
+- **Relative Strength Index (RSI):** Measures stock momentum.
+- **Moving Average Convergence Divergence (MACD):** Identifies trend changes and market momentum.
+
+## Data & Features
+The dataset is retrieved using **vnquant**, and various technical indicators are computed to enhance predictive accuracy. The dataset consists of historical stock data for financial services companies, obtained using **vnquant**:
+**Stock Symbols:** SHB, VHM, FPT, HPG, HCM  
+**Time**: from 2023-01-01 to 2025-03-26
+**Features:** Open, High, Low, Close, Volume, Adjusted Close  
+**Technical Indicators:** SMA, EMA, RSI, MACD  
+
+## Model Implementation
+- **Data Preprocessing:**
+  - Data collected using **vnquant**.
+  - Cleaned stock price data and computed technical indicators.
+  - Normalized data for deep learning models.
+
+- **Prediction Models:**
+  - **LSTM & GRU:** Used for sequence-based forecasting.
+  - **XGBoost:** Applied for feature-engineered time series prediction.
+  - Hyperparameter tuning using **Grid Search and Bayesian Optimization**.
 
 - **Performance Evaluation:**
-  - Compared models using **MAE, MSE, RMSE, and R2-Score**.
+  - Compared models using **MAE, MSE, RMSE, MAE, and MAPE**.
   - Visualized predictions vs. actual stock prices using **Matplotlib & Seaborn**.
-
-## Dataset
-The dataset consists of historical stock data from financial services companies, including:
-✅ **Stock symbols:** SSI, VND, VCI, VIX, HCM  
-✅ **Features:** Open, High, Low, Close, Volume, Adjusted Close  
-✅ **Technical Indicators:** MACD, RSI, SMA, EMA  
-
-## 🛠 Technologies & Libraries
-- **Programming:** Python
-- **Libraries:** TensorFlow/Keras, Scikit-learn, Pandas, NumPy, Matplotlib, XGBoost
-- **Deep Learning Frameworks:** LSTM, GRU
-- **Machine Learning:** XGBoost
-
-## 📌 Results & Insights
-- LSTM and GRU models captured sequential dependencies effectively, outperforming traditional models.
-- XGBoost provided strong performance on feature-engineered tabular data.
-- The combination of **technical indicators and deep learning** significantly improved prediction accuracy.
-
-## 📜 Future Improvements
-✅ Integrate real-time stock price updates  
-✅ Test additional time series models (e.g., Transformer-based models)  
-✅ Deploy the model as an API for live predictions  
