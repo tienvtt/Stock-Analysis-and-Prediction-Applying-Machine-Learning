@@ -30,7 +30,7 @@ The dataset is retrieved using **vnquant**, and various technical indicators are
 - **Data Preprocessing:**
   - Data collected using **vnquant**.
   - Cleaned stock price data and computed technical indicators.
-  - Normalized data for deep learning models.
+  - Normalized data for machine learning models.
 
 - **Prediction Models:**
   - **LSTM & GRU:** Used for sequence-based forecasting.
